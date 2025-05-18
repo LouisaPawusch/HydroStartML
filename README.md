@@ -8,4 +8,7 @@ To accelerate the model spin-up process we developed HydroStartML, a machine lea
 Our results show that initializing spin-up computations with HydroStartML predictions leads to faster convergence than with other initial configurations like spatially constant DTWTs. The emulator accurately predicts configurations close to steady state, even for terrain configurations not seen in training, and allows especially significant reductions in computational spin-up effort in regions with deep DTWTs. This work opens the door for hybrid approaches that blend machine learning and traditional simulation, enhancing predictive accuracy and efficiency in hydrology for improving water resource management and understanding complex environmental interactions.
 
 To execute, call the python files with the HML_settings.yaml file.
-Find the data generation procedure in get_data/, the training of HydroStartML in train_HML/, the fully trained model in train_HML/models/, and examplary code on how to use the trained model on unseen terrain in use_HML/.
+Find the data generation procedure in get_data/.
+The fully trained HydroStartML model is in train_HML/models/, the according training and validation losses are in train_HML/MSE_losess.
+The training of HydroStartML is in train_HML/, as well as the neccessary subfolders.
+Examplary code on how to use the trained model on unseen terrain in use_HML/, as well as the necessary subfolders.
